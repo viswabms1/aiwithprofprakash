@@ -1,0 +1,40 @@
+# Pages CMS configuration (https://pagescms.org). Not tested yet.
+media:
+  input: assets/uploads
+  output: /assets/uploads
+content:
+  - name: pages
+    label: Pages (HTML)
+    type: collection
+    path: pages
+    format: raw
+    fields:
+      - name: body
+        label: Full HTML of the page
+        type: code
+        options:
+          language: html
+  - name: home
+    label: Home page
+    type: file
+    path: index.html
+    format: raw
+    fields:
+      - name: body
+        label: Full HTML of the page
+        type: code
+        options:
+          language: html
+  - name: menu
+    label: Menu
+    type: file
+    path: menu.json
+    format: json
+    fields:
+      - name: items
+        label: Menu items
+        type: object
+        list: true
+        fields:
+          - {name: title, label: Title, type: string}
+          - {name: url, label: Link (e.g. pages/about.html)}

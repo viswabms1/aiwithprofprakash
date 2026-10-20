@@ -1,0 +1,5 @@
+[
+  {"title": "Home", "url": "index.html"},
+  {"title": "About", "url": "pages/about.html"},
+  {"title": "Contact", "url": "pages/contact.html"}
+]
